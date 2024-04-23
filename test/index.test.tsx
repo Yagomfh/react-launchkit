@@ -10,7 +10,7 @@ describe('EmailLogin', () => {
         buttonLabel="Submit"
         emailLabel="Email"
         passwordLabel="Password"
-        onSubmit={async values => console.log(values)}
+        onSubmit={async (values) => console.log(values)}
       />,
       div
     );

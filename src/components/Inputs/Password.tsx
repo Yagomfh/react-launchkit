@@ -17,7 +17,7 @@ interface Props {
   isValid?: boolean;
 }
 
-const PasswordInput: FC<Props & ComponentProps<typeof Input>> = props => {
+const PasswordInput: FC<Props & ComponentProps<typeof Input>> = (props) => {
   const [show, setShow] = useState(false);
   const handleClick = () => setShow(!show);
 

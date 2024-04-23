@@ -1,4 +1,4 @@
-import { extendTheme } from '@chakra-ui/react'
+import { extendTheme } from '@chakra-ui/react';
 
 export const theme = extendTheme({
   colors: {
@@ -12,7 +12,7 @@ export const theme = extendTheme({
       600: '#495057', // light hover
       700: '#343a40', // light pressed
       800: '#212529',
-      900: '#0e0f14'
-    }
-  }
-})
+      900: '#0e0f14',
+    },
+  },
+});
