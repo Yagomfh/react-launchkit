@@ -1,3 +1,4 @@
+// @ts-ignore
 import * as React from 'react';
 import { ViewOffIcon, ViewIcon } from '@chakra-ui/icons';
 import {
@@ -17,7 +18,7 @@ interface Props {
   isValid?: boolean;
 }
 
-const PasswordInput: FC<Props & ComponentProps<typeof Input>> = (props) => {
+const PasswordInput: FC<Props & ComponentProps<typeof Input>> = props => {
   const [show, setShow] = useState(false);
   const handleClick = () => setShow(!show);
 

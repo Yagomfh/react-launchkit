@@ -1,4 +1,3 @@
-import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { EmailLoginForm } from '../src/index';
 
@@ -7,10 +6,12 @@ describe('EmailLogin', () => {
     const div = document.createElement('div');
     ReactDOM.render(
       <EmailLoginForm
-        buttonLabel="Submit"
+        buttonText="Submit"
+        emailPlaceholder="Placeholder"
         emailLabel="Email"
+        passwordPlaceholder="Placeholder"
         passwordLabel="Password"
-        onSubmit={async (values) => console.log(values)}
+        onSubmit={async values => console.log(values)}
       />,
       div
     );
